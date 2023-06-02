@@ -67,6 +67,9 @@ body {
   letter-spacing: 2px;
 }
 
+#typing-text {
+  font-size: 25px;
+}
 
 #typing-text::after {
   content: "|"; 

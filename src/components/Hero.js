@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 const Hero = () => {
   const phrases = [
-    "A Software Engineer",
-    "A Creative",
-    "A Full Stack Developer",
-    "A Problem Solver"
+    "A Software Engineer.",
+    "A Creative.",
+    "A Full Stack Developer.",
+    "A Problem Solver."
   ];
 
   let index = 0;
@@ -62,7 +62,7 @@ const Hero = () => {
     <div className='container'>
       <div className='hero'>
         <div className='intro'>
-          <h1>Hey. I'm Frankie</h1>
+          <h1>Hello. I'm Frankie.</h1>
           <p ref={textElementRef} id="typing-text"></p>
         </div>
       </div>
