@@ -1,13 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 body {
+  background-color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header */
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: white 1px solid;
+}
+
+.header img {
+  width: 200px;
+}
+
+.links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Titillium Web', sans-serif;
+  align-items: center;
+}
+
+.links p {
+  margin-right: 20px;
+  letter-spacing: 3px;
+}
+
+/* Hero */
+
+.container {
+  border: 1px solid black;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 80%;
+  height: 80%;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  border: solid white 1px;
+  padding: 20px;
+}
+
+.hero h1 {
+  letter-spacing: 2px;
+}
+
+
+#typing-text::after {
+  content: "|"; 
+  animation: cursor-animation 0.7s infinite;
+}
+
+@keyframes cursor-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
