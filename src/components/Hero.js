@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
+
 const Hero = () => {
   const phrases = [
     "A Software Engineer.",
@@ -12,8 +13,6 @@ const Hero = () => {
   let charIndex = 0;
   let isDeleting = false;
   let typingSpeed = 100;
-  let deletingSpeed = 50;
-  let delayTime = 1500;
   let pauseTime = 1000; // Adjust the pause time (in milliseconds) if desired
 
   const textElementRef = useRef(null);
@@ -58,12 +57,16 @@ const Hero = () => {
     };
   }, []);
 
+
   return (
     <div className='container'>
       <div className='hero'>
         <div className='intro'>
           <h1>Hello. I'm Frankie.</h1>
           <p ref={textElementRef} id="typing-text"></p>
+        </div>
+        <div className='particleContainer'>
+          
         </div>
       </div>
     </div>
