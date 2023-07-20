@@ -13,7 +13,7 @@ const Hero = () => {
   let charIndex = 0;
   let isDeleting = false;
   let typingSpeed = 100;
-  let pauseTime = 1000; // Adjust the pause time (in milliseconds) if desired
+  let pauseTime = 1000; 
 
   const textElementRef = useRef(null);
   let animationFrameId = null;
@@ -21,7 +21,8 @@ const Hero = () => {
   const typeOut = () => {
     const currentPhrase = phrases[index];
     const textElement = textElementRef.current;
-    let currentText = textElement.textContent;
+    if (!textElement || textElement.textContent === null) return;
+    let currentText = textElement ? textElement.textContent : '';
 
     if (isDeleting) {
       currentText = currentPhrase.substring(0, charIndex - 1);

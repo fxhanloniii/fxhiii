@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
         <div className="icons">
             <div className="icon">
-                <a href="https://www.linkedin.com/"><img className="linkedin" src="./assets/linkedin.png" alt="LinkedIn"/></a>
+                <a href="https://www.linkedin.com/in/frankie-hanlon-iii/"><img className="linkedin" src="./assets/linkedin.png" alt="LinkedIn"/></a>
             </div>
             <div className="icon">
 

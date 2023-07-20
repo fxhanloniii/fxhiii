@@ -1,14 +1,12 @@
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import RecentProjects from "./components/RecentProjects";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <RecentProjects />
+      <Main />
       <Footer />
     </div>
   );
