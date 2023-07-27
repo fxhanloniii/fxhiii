@@ -22,7 +22,7 @@ body {
   background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   border-bottom: white 1px solid;
   position: relative;
@@ -31,6 +31,13 @@ body {
 .header img {
   width: 150px;
   margin-left: 10px;
+}
+
+.links-container {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .links {

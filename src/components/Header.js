@@ -14,13 +14,15 @@ const Header = () => {
     <>
     <div className='header'>
       <img src='/assets/whitelogonb2.png' alt='logo' />
-      <div className='links'>
-        <Link to='/'><p>// Home</p></Link>
-        <Link to='/aboutme'><p>// About Me</p></Link>
-        <Link to='/projects'><p>// Projects</p></Link>
-      </div>
-      <div className='dropdown-button' onClick={toggleDropdown}>
-          <FloatingCube />
+      <div className="links-container">
+        <div className='links'>
+          <Link to='/'><p>// Home</p></Link>
+          <Link to='/aboutme'><p>// About Me</p></Link>
+          <Link to='/projects'><p>// Projects</p></Link>
+        </div>
+        <div className='dropdown-button' onClick={toggleDropdown}>
+            <FloatingCube />
+        </div>
       </div> 
     </div>
     <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
