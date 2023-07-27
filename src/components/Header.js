@@ -11,6 +11,7 @@ const Header = () => {
   };
 
   return (
+    <>
     <div className='header'>
       <img src='/assets/whitelogonb2.png' alt='logo' />
       <div className='links'>
@@ -20,17 +21,16 @@ const Header = () => {
       </div>
       <div className='dropdown-button' onClick={toggleDropdown}>
           <FloatingCube />
-      </div>
-      <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
-        <div className='dropdown-content'>
-            <Link to='/' onClick={toggleDropdown}><p>// Home</p></Link>
-            <Link to='/aboutme' onClick={toggleDropdown}><p>// About Me</p></Link>
-            <Link to='/projects' onClick={toggleDropdown}><p>// Projects</p></Link>
-        </div>
-      </div>
-        
-      
+      </div> 
     </div>
+    <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
+      <div className='dropdown-content'>
+          <Link to='/' onClick={toggleDropdown}><p>// Home</p></Link>
+          <Link to='/aboutme' onClick={toggleDropdown}><p>// About Me</p></Link>
+          <Link to='/projects' onClick={toggleDropdown}><p>// Projects</p></Link>
+      </div>
+    </div>
+    </>
   )
 }
 

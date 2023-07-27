@@ -25,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: white 1px solid;
+  position: relative;
 }
 
 .header img {
@@ -38,6 +39,7 @@ body {
   flex-direction: row;
   font-family: 'Orbitron', sans-serif;
   align-items: center;
+  margin-left: auto;
 }
 
 .links p {
@@ -49,26 +51,36 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100vw;
   z-index: 1;
 }
 
 .dropdown-content {
-  display: none; /* Initial state is hidden */
+  display: none; 
   flex-direction: column;
   align-items: center;
-  opacity: 0; /* Initial opacity */
-  transform: translateY(-20px); /* Initial position */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transition */
+  opacity: 0; 
+  transform: translateY(-20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  position: absolute; 
+  right: 0;
+  padding: 10px;
+  background-color: black;
+}
+
+.dropdown-content p {
+  padding: 3px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 3px;
 }
 
 .dropdown-button {
   display: block;
   cursor: pointer;
   z-index: 2;
+  margin-left: auto;
 }
 
-/* The dropdown menu is visible when the 'open' class is added */
+
 .dropdown-menu.open .dropdown-content {
   display: flex;
   opacity: 1;
@@ -78,15 +90,16 @@ body {
 @media screen and (max-width: 768px) {
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .navbar {
+  .links {
     display: none;
   }
 
   .dropdown-button {
     display: block;
+    margin-left: auto;
   }
 
   .dropdown-menu {
@@ -96,10 +109,8 @@ body {
   }
 
   .dropdown-content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: relative; 
+    width: auto; 
     background-color: #f9f9f9;
     padding: 0px;
     justify-content: center;
