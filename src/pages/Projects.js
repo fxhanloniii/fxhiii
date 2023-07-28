@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div>
         <div className='recentProjects'>
-        <h1>Projects</h1>
+        <h1 className="projectsH1">Projects</h1>
         <div className='projectGrid'>
             <div className='projectCard'>
                 <Artel />
