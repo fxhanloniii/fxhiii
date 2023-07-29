@@ -369,3 +369,166 @@ body {
 .linkedin {
   margin-top: 3px;
 }
+
+/* About Me */
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMeH1 {
+  color: black;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: x-large;
+  border-bottom: 2px solid black;
+  width: max-content;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* GameBoy */
+
+.gameBoy {
+  height: 550px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background: #c92438;
+  background: -webkit-linear-gradient(to right, #c92438, #a50026);
+  background: linear-gradient(to right, #c92438, #a50026);
+  /* background: #C92438;
+  background: -webkit-linear-gradient(to right, #C92438, #682860);
+  background: linear-gradient(to right, #C92438, #682860); */
+  border: 2px solid black;
+}
+
+.screenBorder {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dadada;
+  border-radius: 20px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.screen {
+  font-family: 'Orbitron', sans-serif;
+  width: 260px;
+  height: 260px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  height: 200px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dpad {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  transform: scale(1.4);
+  margin-left: 10px;
+}
+
+.dpad div {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #a0a0a0;
+  border: 2px solid #606060;
+  overflow: hidden;
+  transition: box-shadow 0.1s;
+}
+
+.dpad-up {
+  top: 0px;
+  left: 20px;
+}
+
+.dpad-down {
+  bottom: 0px;
+  left: 20px;
+  
+}
+
+.dpad-left {
+  top: 20px;
+  left: 0px;
+}
+
+.dpad-right {
+  top: 20px;
+  right: 0px;
+}
+
+.dpad-middle {
+  top: 20px;
+  left: 20px;
+}
+
+.ab {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+}
+.aButton, .bButton {
+  margin: 10px;
+}
+
+.aButton {
+  margin: 0 0 0 15px;
+}
+
+.bButton {
+  margin: 20px 15px 0 0;
+}
+
+.buttonA, .buttonB {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #606060;
+  color: #A0A0A0;
+  font-size: larger;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+.up, .down, .left, .right {
+  height: 100%;
+  width: 100%;
+  background-color: #A0A0A0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buttonA:active, .buttonB:active {
+  transform: translateY(2px);
+  background-color: #4c4c4c; 
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dpad div:active {
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.5); 
+}
