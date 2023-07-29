@@ -47,7 +47,7 @@ const AboutMe = () => {
     title: 'Hobbies',
     additionalInfo: (
       <>
-      <h3 className="hobbies">Frankie has an avid love for the outdoors and finds solace in the mountains, particularly at Mammoth Mountain. Skiing, mountain biking, kayaking, paddle boarding, and camping are among the outdoor activities he passionately pursues and cherishes.</h3>
+      <h3 className="hobbies">Frankie has an avid love for the outdoors and finds solace in the mountains, particularly at Mammoth Mountain. Skiing, mountain biking, kayaking, paddle boarding, and camping are among the outdoor activities he loves most.</h3>
       <div className="icons iconsbackground">
         <img src='assets/skillIcons/beach.png' alt="icon"/>
         <img src='assets/skillIcons/mountain.png' alt="icon"/>
