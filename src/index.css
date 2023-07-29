@@ -375,6 +375,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+  justify-content: center;
 }
 .aboutMeH1 {
   color: black;
@@ -395,7 +397,7 @@ body {
 }
 
 .aboutMeText {
-  width: 350px;
+  width: 450px;
   height: 450px;
   /* border: 1px black solid; */
   margin: 30px;
@@ -426,8 +428,16 @@ body {
   font-family: 'Bruno Ace SC', cursive;
 }
 
+.background {
+  padding: 20px;
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'Bruno Ace SC', cursive;
+  height: 400px;
+  overflow: scroll;
+}
+
 .resumeDiv {
-  margin: 8px;
+  margin: 8px 0 15px 0;
   font-family: 'Bruno Ace SC', cursive;
   font-weight: bold;
   color: #3B82F6;
@@ -436,6 +446,26 @@ body {
 @media screen and (max-width: 768px) {
   .aboutMeContainer {
     flex-direction: column;
+  }
+
+  .background {
+    padding: 20px;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Bruno Ace SC', cursive;
+    height: 300px;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 380px;
+    height: 450px;
+    /* border: 1px black solid; */
+    margin: 30px;
+    text-align: center;
+  }
+
+  .iconsbackground {
+    margin-top: 15px;
   }
 }
 /* GameBoy */

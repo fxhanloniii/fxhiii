@@ -26,10 +26,25 @@ const AboutMe = () => {
       </>
     ),
   }
+
+  const text2 = {
+    title: 'Background',
+    additionalInfo: (
+      <>
+      <h3 className="background">Frankie offers a powerful combination of software engineering expertise and a creative marketing background, complemented by skills in social media strategy, photo, and video production. <br />This unique blend allows him to bring a fresh perspective to the team, delivering innovative solutions that seamlessly integrate technology and creativity. With a keen eye for visual storytelling and experience in crafting successful marketing campaigns, Frankie's diverse skill set adds value to any project, ensuring captivating user experiences and effective audience engagement.</h3>
+      <div className="icons iconsbackground">
+        <img src='assets/skillIcons/premiere-pro.png' alt="icon"/>
+        <img src='assets/skillIcons/creative.png' alt="icon"/>
+        <img src='assets/skillIcons/figma.png' alt="icon"/>
+        <img src='assets/skillIcons/social-media.png' alt="icon"/>
+        <img src='assets/skillIcons/photoshop.png' alt="icon"/>
+      </div>
+      </>
+    ),
+  }
   const images = [
     {src:'./assets/aboutMeImages/headshot.jpeg', text: text1},
-    {src:'./assets/aboutMeImages/action.jpg', text: 'Experience'},
-    {src:'./assets/aboutMeImages/mammoth.jpg', text: 'Mammoth Sking Image'},
+    {src:'./assets/aboutMeImages/action.jpg', text: text2},
     {src:'./assets/aboutMeImages/mammoth.jpg', text: 'Mammoth Sking Image'},
   ]
 
