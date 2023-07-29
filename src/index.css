@@ -387,6 +387,20 @@ body {
   margin-top: 20px;
 }
 
+
+/* About Me Text */
+.aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutMeText {
+  width: 350px;
+  height: 450px;
+  border: 1px black solid;
+  margin: 30px;
+}
+
 /* GameBoy */
 
 .gameBoy {

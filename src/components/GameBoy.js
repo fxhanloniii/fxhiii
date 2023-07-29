@@ -1,11 +1,12 @@
 import React from 'react'
 
-const GameBoy = () => {
+const GameBoy = ({ currentImage, handleNextImage, handlePrevImage }) => {
+
   return (
     <div className="gameBoy">
         <div className="screenBorder">
             <div className="screen">
-                
+                {/* Image Slide Show When User Clicks A or B Button */}
             </div>
         </div>
         <div className="buttons">
