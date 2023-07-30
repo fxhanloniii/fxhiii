@@ -14,8 +14,8 @@ const GameBoy = ({ currentImage, handleNextImage, handlePrevImage }) => {
                 <div className="dpad">
                     <div className="dpad-up"><button className="up"></button></div>
                     <div className="dpad-down"><button className="down"></button></div>
-                    <div className="dpad-left"><button className="left"></button></div>
-                    <div className="dpad-right"><button className="right"></button></div>
+                    <div className="dpad-left"><button className="left" onClick={handlePrevImage} ></button></div>
+                    <div className="dpad-right"><button className="right" onClick={handleNextImage} ></button></div>
                     <div className="dpad-middle"></div>
                 </div>
             <div className="ab">
@@ -23,7 +23,7 @@ const GameBoy = ({ currentImage, handleNextImage, handlePrevImage }) => {
                     <button className="buttonB" onClick={handlePrevImage}>B</button>
                 </div>
                 <div className="aButton">
-                    <button className="buttonA"onClick={handleNextImage}>A</button>
+                    <button className="buttonA" onClick={handleNextImage}>A</button>
                 </div>
             </div>
         </div>

@@ -11,13 +11,13 @@ const AboutMe = () => {
       <div className="resumeDiv">
         <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
-      <div className="icons">
+      <div className="skillicons">
         <img src='assets/skillIcons/react.png' alt="icon"/>
         <img src='assets/skillIcons/java-script.png' alt="icon"/>
         <img src='assets/skillIcons/python.png' alt="icon"/>
         <img src='assets/skillIcons/database-storage.png' alt="icon"/>
       </div>
-      <div className="icons">
+      <div className="skillicons">
         <img src='assets/skillIcons/css-3.png' alt="icon"/>
         <img src='assets/skillIcons/django.png' alt="icon"/>
         <img src='assets/skillIcons/docker.png' alt="icon"/>
@@ -32,7 +32,7 @@ const AboutMe = () => {
     additionalInfo: (
       <>
       <h3 className="background">Frankie offers a powerful combination of software engineering expertise and a creative marketing background, complemented by skills in social media strategy, photo, and video production. <br />This unique blend allows him to bring a fresh perspective to the team, delivering innovative solutions that seamlessly integrate technology and creativity. With a keen eye for visual storytelling and experience in crafting successful marketing campaigns, Frankie's diverse skill set adds value to any project, ensuring captivating user experiences and effective audience engagement.</h3>
-      <div className="icons iconsbackground">
+      <div className="skillicons iconsbackground">
         <img src='assets/skillIcons/premiere-pro.png' alt="icon"/>
         <img src='assets/skillIcons/creative.png' alt="icon"/>
         <img src='assets/skillIcons/figma.png' alt="icon"/>
@@ -48,7 +48,7 @@ const AboutMe = () => {
     additionalInfo: (
       <>
       <h3 className="hobbies">Frankie has an avid love for the outdoors and finds solace in the mountains, particularly at Mammoth Mountain. Skiing, mountain biking, kayaking, paddle boarding, and camping are among the outdoor activities he loves most.</h3>
-      <div className="icons iconsbackground">
+      <div className="skillicons iconsbackground">
         <img src='assets/skillIcons/beach.png' alt="icon"/>
         <img src='assets/skillIcons/mountain.png' alt="icon"/>
         <img src='assets/skillIcons/skiing.png' alt="icon"/>

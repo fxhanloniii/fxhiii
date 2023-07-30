@@ -417,7 +417,14 @@ body {
   font-size: 20px;
 }
 
-.icons img {
+.skillicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.skillicons img {
   width: 50px;
   margin: 5px;
 }
