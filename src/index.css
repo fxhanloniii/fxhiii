@@ -490,13 +490,13 @@ body {
   align-items: center;
   margin: 0 auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background: #c92438;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  /* background: #c92438;
   background: -webkit-linear-gradient(to right, #c92438, #a50026);
-  background: linear-gradient(to right, #c92438, #a50026);
-  /* background: #C92438;
-  background: -webkit-linear-gradient(to right, #C92438, #682860);
-  background: linear-gradient(to right, #C92438, #682860); */
+  background: linear-gradient(to right, #c92438, #a50026); */
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
   border: 2px solid black;
 }
 
