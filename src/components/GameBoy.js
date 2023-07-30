@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const GameBoy = ({ currentImage, handleNextImage, handlePrevImage }) => {
+
+    const [showBlinkAnimation, setShowBlinkAnimation] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setShowBlinkAnimation(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+      }, []);
 
   return (
     <div className="gameBoy">
@@ -19,10 +29,10 @@ const GameBoy = ({ currentImage, handleNextImage, handlePrevImage }) => {
                     <div className="dpad-middle"></div>
                 </div>
             <div className="ab">
-                <div className="bButton">
+                <div className={`bButton ${showBlinkAnimation ? 'blink-animation' : ''}`}>
                     <button className="buttonB" onClick={handlePrevImage}>B</button>
                 </div>
-                <div className="aButton">
+                <div className={`aButton ${showBlinkAnimation ? 'blink-animation' : ''}`}>
                     <button className="buttonA" onClick={handleNextImage}>A</button>
                 </div>
             </div>

@@ -630,3 +630,19 @@ body {
 .dpad div:active {
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.5); 
 }
+
+.blink-animation {
+  animation: blinkAnimation 0.5s infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
